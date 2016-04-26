@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KMS</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="arrBulan">
+        <item>Bulan</item>
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".view.MainActivity">
+
+    <!--judul-->
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cek Status Gizi Balita"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <!--input text nama balita-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Balita" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!--judul jenis kelamin-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        style="@style/Text.Judul"
+        android:layout_marginTop="10dp"/>
+
+    <!--radio button jenis kelamin-->
+    <RadioGroup
+        android:id="@+id/rdoGrup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--jenis kelamin laki-->
+        <RadioButton
+            android:id="@+id/rdoLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Laki - Laki"/>
+
+        <!--jenis kelamin perempuan-->
+        <RadioButton
+            android:id="@+id/rdoPrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perempuan" />
+
+    </RadioGroup>
+
+    <!--judul tanggal lahir-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        style="@style/Text.Judul"
+        android:layout_marginTop="10dp"/>
+
+    <!--layout spinner tanggal lahir-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!--tanggal-->
+        <Spinner
+            android:id="@+id/spinTgl"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_weight="1"></Spinner>
+
+        <!--bulan-->
+        <Spinner
+            android:id="@+id/spinBln"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_weight="1"></Spinner>
+
+        <!--tahun-->
+        <Spinner
+            android:id="@+id/spinTahun"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_weight="1"></Spinner>
+
+    </LinearLayout>
+
+    <!--berat-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/edBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Berat (Kg)"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--button proses-->
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"
+        android:text="Proses"/>
+</LinearLayout>
